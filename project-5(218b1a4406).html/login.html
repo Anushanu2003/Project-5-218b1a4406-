@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>home</title>
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+  function myFun(){
+      var uname=document.myform.username.value;
+      var password=document.myform.password.value;
+      if(uname==null || uname==""){
+          alert("username should not blank")
+          return false;
+      }
+      else if(password.length<6){
+          alert("password must have 6 letters")
+          return false;
+      }
+      else{
+          return true;
+      }
+  }
+  
+</script>
+        <style >
+            section,footer{
+        padding: 100px;
+        background-image: url(https://img.lovepik.com/background/20211022/large/lovepik-tourism-background-image_500913425.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: rgb(17, 17, 17);
+       }
+            img{
+                padding-left: 300px;
+            }
+            hr{
+                width:1000px;
+            }
+            .container {
+                display: grid;
+              align-items: center; 
+              grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+  float: left;
+}
+.text {
+  font-size: 40px;
+  padding-left: 20px;
+  float: left;
+  text-shadow: 2px 2px 8px green;
+}
+
+.navbar {
+  
+  background-color: #380ad0;
+  overflow: auto;
+  padding: 20px;
+
+}
+a{
+  color: antiquewhite;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.topnav-right{
+          float: right;
+        }
+        .box{
+            text-align: left;
+           margin:0 auto; 
+           width:300px;
+           padding:20px;
+           border-radius: 5px;
+           border:3px solid #0a0a0a;}
+    section{
+        a{
+            color: black;
+        }
+    }
+    
+    </style>
+    </head>
+    <body>
+      <header>
+        <div class="container">
+            <div class="image">
+              <img src="anu1.jpg" width="150" height="150">
+            </div>
+            <div class="text">
+              <p>Travel....!
+              Before you run out of time...</p>
+            </div>
+          </div>
+        <div class="navbar">
+        <a href="country.html">Country Guide</a>
+        <a href="city.html">City Guide</a>
+        <a href="food.html">Food And Drink</a>
+        <a href="fligth.html">Flights</a>
+        <div class="topnav-right">
+          <a href="Signin.html">SignUp</a>  
+          <a href="login.html">Login</a></div>
+        </div>
+      </header>
+      <section>
+        <center>
+            <h1>Login</h1>
+            <div class="box">
+            <form name="myform" action="homepage.html" onsubmit="return myFun(this)">
+              username:<input type="text" name="username"><br><br>
+             
+              password:<input type="password" name="password"><br><br>
+              <center>
+              <input type="submit"></center>
+              <br>
+              <br>
+              <center>
+              <a href="Signin.html" >forgot password?</a></h4></center>
+          </form>
+          </div>
+          </center>
+      </section
+    </body>
+</html>

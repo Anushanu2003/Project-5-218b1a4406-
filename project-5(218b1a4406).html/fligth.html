@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>home</title>
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style >
+           section,footer{
+      padding-top: 20px;
+        background-image: url(https://img.freepik.com/premium-photo/travel-concept-blue-background-with-copy-space-airplane-toy-blue-color-background_661495-33661.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: rgb(17, 17, 17);
+        padding-bottom: 90px;
+       }
+            img{
+                padding-left: 300px;
+            }
+            hr{
+                width:1000px;
+            }
+            .container {
+                display: grid;
+              align-items: center; 
+              grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+  float: left;
+}
+.text {
+  font-size: 40px;
+  padding-left: 20px;
+  float: left;
+  text-shadow: 2px 2px 8px green;
+}
+
+.navbar {
+  
+  background-color: #380ad0;
+  overflow: auto;
+  padding: 20px;
+
+}
+a{
+  color: antiquewhite;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.topnav-right{
+          float: right;
+        }
+       section{
+        padding-left: 30px;
+       }
+       #wgtmsr{
+ width:150px;   
+}
+button{
+    background-color: green;
+    color: antiquewhite;
+    border-radius: 20px;
+}
+.box{
+            text-align: left;
+           margin:center; 
+           width:300px;
+           padding:20px;
+           border:3px solid #0a0a0a;}
+           .abc{
+           img{
+            border-radius: 10;
+           }}
+    </style>
+    </head>
+    <body>
+      <header>
+        <div class="container">
+            <div class="image">
+              <img src="anu1.jpg" width="150" height="150">
+            </div>
+            <div class="text">
+              <p>Travel....!
+              Before you run out of time...</p>
+            </div>
+          </div>
+        <div class="navbar">
+        <a href="country.html">Country Guide</a>
+        <a href="city.html">City Guide</a>
+        <a href="food.html">Food And Drink</a>
+        <a href="fligth.html">Flights</a>
+        <div class="topnav-right">
+          <a href="Signin.html">SignUp</a>  
+          <a href="login.html">Login</a></div>
+        </div>
+      </header>
+      <section>
+        <br>
+        <br>
+        <br>
+        <center>
+            <h1>Flight Booking</h1>
+            <div class="box">
+       <b>From:</b>
+       <input type="text" size=30 width="200px" height="200px"><br><br>
+       <b>to:</b>
+       <input type="text" size=30 width="200px" height="200px">
+       <br>
+       <br>
+       <b>Depart:</b>
+       <input type="date"  width="200px" height="200px"><br><br>
+      <b>Return:</b>
+       <input type="date" width="200px" height="200px">
+       <br>
+       <br>
+       <b>Cabin Class:</b>
+       <select name="wgtmsr" width="100px" id="wgtmsr">
+        <option value="volvo">Economy</option>
+        <option value="saab">Premium Class</option>
+        <option value="opel">Business Class</option>
+        <option value="audi">First Class</option>
+      </select>
+      <br>
+      <br>
+      <button>Search Flight<span style='font-size:20px;'>&#128746;</span></button>
+      </section>
+    </div>
+    </body>
+</html>
